@@ -1,0 +1,48 @@
+@import "../../App";
+
+.datesinfo {
+  width: 215px;
+
+  &__remain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    @include tablets {
+      justify-content: flex-start;
+    }
+  }
+
+  &__dates {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+
+    @include tablets {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    @include phones {
+      font-size: 18px;
+    }
+  }
+
+  &__reamaintext {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    @include phones {
+      font-size: 20px;
+    }
+  }
+
+  &__reamainmeaning {
+    margin: 0;
+    @include tablets {
+      font-size: 20px;
+    }
+  }
+}

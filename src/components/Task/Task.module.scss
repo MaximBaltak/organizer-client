@@ -1,0 +1,96 @@
+@import "../../App";
+
+.elementtodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 811px;
+  min-height: 77px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.82);
+  border-radius: 24px;
+
+  @include desktop {
+    width: 710px;
+  }
+  @include tablets {
+    width: 90%;
+    min-width: 290px;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+
+  &__leftblock {
+    height: 100%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+      flex-direction: column;
+      width: calc(100% - 100px);
+      align-items: flex-start;
+      padding: 0 5px;
+    }
+  }
+
+  &__status {
+    color: #ffe600;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    min-width: 100px;
+
+    @include tablets {
+      order: 2;
+      font-size: 20x;
+      margin-top: 10px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    margin: 0;
+    padding: 0 5px;
+    @include tablets {
+      order: 1;
+      font-size: 26px;
+      padding: 0;
+    }
+  }
+
+  &__datesinfo {
+    @include tablets {
+      order: 3;
+    }
+  }
+}
+
+.wap {
+  width: 215px;
+}
+
+.wap p {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.wap_flex {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.wap_flex p {
+  margin-right: 5px;
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0;
+}

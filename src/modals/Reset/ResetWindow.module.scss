@@ -1,0 +1,39 @@
+@import "./../../App";
+
+.text {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+.email {
+  display: block;
+  margin: 20px auto;
+  width: 293px;
+  height: 63px;
+  border: none;
+  border-bottom: solid 2px white;
+  padding: 5px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  background: none;
+  outline: none;
+  @include phones {
+    width: 100%;
+  }
+}
+
+.wrapperReset {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  button {
+    margin-left: 0;
+    margin-right: 0;
+    @include phones {
+      margin-top: 20px;
+    }
+  }
+
+}

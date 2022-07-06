@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.footer {
+  background-color: #000000;
+  font-size: 24px;
+  color: $color-text;
+  font-weight: 700;
+  z-index: 500;
+  position: relative;
+
+  @include tablets {
+    font-size: 22px;
+  }
+  @include phones {
+    font-size: 18px;
+  }
+
+  &__container {
+    @include container;
+    min-height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    font-size: 32px;
+    @include tablets {
+      font-size: 26px;
+    }
+    @include phones {
+      font-size: 22px;
+    }
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-hover;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../App";
+
+.title {
+  min-width: 364px;
+  min-height: 176px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: #000000;
+
+  @include tablets {
+    min-width: 320px;
+    min-height: 160px;
+  }
+  @include phones {
+    min-width: 290px;
+    min-height: 150px;
+  }
+}
+
+.title h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 94px;
+
+  @include tablets {
+    padding-top: 90px;
+    font-size: 34px;
+  }
+  @include tablets {
+    padding-top: 88px;
+    font-size: 32px;
+  }
+}

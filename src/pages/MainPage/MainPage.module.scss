@@ -1,0 +1,109 @@
+@import "./../../App";
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+
+  &__container {
+    @include container;
+  }
+
+  &__greeting {
+    position: relative;
+    z-index: 2;
+    margin: 34px auto;
+    width: 623px;
+    min-height: 230px;
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 32px;
+    @include tablets {
+      width: 100%;
+    }
+  }
+
+  &__datetime {
+    margin: 0 auto;
+    min-width: 155px;
+    height: 120px;
+
+    p {
+      text-align: center;
+      font-size: 48px;
+      margin: 0;
+      font-weight: 700;
+      color: white;
+      @include phones {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 50px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    @include phones {
+      font-size: 30px;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    @include desktop {
+      width: 120vw;
+    }
+    @include phones {
+      width: 150%;
+    }
+  }
+}
+
+.window {
+  position: absolute;
+  z-index: 500;
+  opacity: 1;
+  width: 429px;
+  min-height: 500px;
+  background-color: black;
+  padding: 40px;
+  top: 10px;
+  @include desktop {
+  }
+  @include tablets {
+  }
+  @include phones {
+    width: 100%;
+  }
+}
+.reset {
+  position: absolute;
+  z-index: 5001;
+  opacity: 1;
+  top: 34%;
+  left: 33%;
+  width: 590px;
+  min-height: 207px;
+  background: #000000;
+  padding: 40px;
+  @include desktop {
+    left: 15%;
+  }
+  @include tablets {
+    width: 100%;
+    left: 0;
+  }
+}

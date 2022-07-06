@@ -1,0 +1,32 @@
+@import "./../../App";
+
+.el {
+  width: 310px;
+  min-height: 55px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px #ffffff;
+  margin: 30px auto;
+  @include tablets {
+    width: 100%;
+  }
+
+  p {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    word-break: break-word;
+    width: 210px;
+  }
+
+  button {
+    background: url("../../img/icons/checket.png") center center/cover no-repeat;
+    outline: none;
+    border: none;
+    filter: drop-shadow(0px 2px 6px #05FF00);
+    width: 30px;
+    height: 36px;
+    margin-left: 70px;
+  }
+}
+

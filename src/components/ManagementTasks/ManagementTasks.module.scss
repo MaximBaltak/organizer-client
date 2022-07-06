@@ -1,0 +1,29 @@
+@import "../../App";
+
+.planner {
+  margin-top: 205px;
+
+  @include tablets {
+    margin-top: 50px;
+  }
+
+  &__buttons {
+    width: 677px;
+    margin: 0 auto;
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop {
+      width: 540px;
+    }
+    @include tablets {
+      width: 70%;
+      min-width: 290px;
+      margin-top: 70px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

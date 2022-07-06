@@ -1,0 +1,43 @@
+@import "./../../App";
+.container{
+  background: white;
+  position: relative;
+  z-index: 100;
+  &__flex{
+    width: 800px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    @include desktop{
+      width: 90%;
+    }
+
+    &__text{
+      margin: 0;
+      font-weight: 600;
+      font-size: 20px;
+      color: black;
+      text-align: center;
+
+    }
+    &__yes{
+      outline: none;
+      border: none;
+      display: block;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      background: #2e83ef;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover{
+        background: #174685;
+      }
+    }
+  }
+}

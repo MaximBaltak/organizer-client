@@ -1,0 +1,163 @@
+@import "../../App";
+
+.managementgoals {
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__error {
+    font-size: 25px;
+    font-weight: 500;
+    color: darkred;
+    margin: 0;
+  }
+
+  &__goaltitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_left {
+      align-items: end;
+      padding-right: 91px;
+
+      @include tablets {
+        padding-right: 41px;
+      }
+      @include phones {
+        padding-right: 21px;
+      }
+    }
+
+    &_right {
+      align-items: start;
+      padding-left: 90px;
+      border-left: solid 1px white;
+
+      @include tablets {
+        padding-left: 40px;
+      }
+      @include phones {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__datatext {
+    color: white;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 35%;
+    min-width: 170px;
+
+    @include tablets {
+      width: 100%;
+      min-width: unset;
+    }
+    @include tablets {
+      font-size: 20px;
+    }
+  }
+
+  &__stepstext {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 80%;
+    min-width: 270px;
+
+    @include tablets {
+      width: 100%;
+      min-width: unset;
+    }
+    @include tablets {
+      font-size: 20px;
+    }
+  }
+
+  &__input {
+    width: 293px;
+    height: 63px;
+    background: rgba(0, 0, 0, 0.72);
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 24px;
+
+    @include tablets {
+      font-size: 20px;
+    }
+
+    &_title {
+      margin-top: 43px;
+      margin-bottom: 71px;
+
+      @include tablets {
+        width: 100%;
+
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
+
+    &_enddata {
+      margin: 0;
+      width: 70%;
+      min-width: 240px;
+
+      &::-webkit-calendar-picker-indicator {
+        background: url("../../img/icons/calendar.png") center center/cover no-repeat;
+      }
+
+      @include tablets {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  }
+
+  &__stepsinput {
+    width: 92%;
+    height: 63px;
+    background: rgba(0, 0, 0, 0.72);
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    resize: none;
+    @include tablets {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 61px;
+    min-height: 170px;
+
+    @include tablets {
+      margin-top: 40px;
+      min-height: 140px;
+    }
+  }
+}

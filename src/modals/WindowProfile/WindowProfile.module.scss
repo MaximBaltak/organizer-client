@@ -1,0 +1,50 @@
+@import "../../App.scss";
+
+.modalChange {
+  @include modal;
+  &__errorText{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  &__block {
+    margin: 50px 50px 20px;
+
+    &:not(:first-child) {
+      margin-bottom: 33px;
+    }
+
+    @include tablets {
+      margin: 40px 0 20px;
+    }
+  }
+
+  &__label {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 4px;
+  }
+
+  &__input {
+    display: block;
+    margin: 0;
+    margin-top: 1px;
+    width: 230px;
+    height: 44px;
+    border: none;
+    border-bottom: solid 2px white;
+    padding: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+    outline: none;
+
+    @include tablets {
+      width: 100%;
+    }
+  }
+}

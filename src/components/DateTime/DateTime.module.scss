@@ -1,0 +1,19 @@
+@import "../../App";
+
+.wap {
+  & p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+
+    @include tablets {
+      font-size: 34px;
+      margin-bottom: 5px;
+    }
+    @include phones {
+      font-size: 32px;
+      margin-bottom: 2px;
+    }
+  }
+}
